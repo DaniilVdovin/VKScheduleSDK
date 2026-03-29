@@ -5,9 +5,9 @@ namespace VKScheduleSDK.NET.Core;
 /// </summary>
 public class ScheduleApiClient : IDisposable
 {
-    private readonly HttpClient _httpClient;
-    private readonly string _baseUrl;
-    private readonly string? _bearerToken;
+    readonly private HttpClient _httpClient;
+    readonly private string _baseUrl;
+    readonly private string? _bearerToken;
     private bool _disposed;
 
     /// <summary>

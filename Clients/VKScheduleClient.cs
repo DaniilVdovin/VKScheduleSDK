@@ -8,8 +8,8 @@ namespace VKScheduleSDK.NET.Clients;
 /// </summary>
 public class VKScheduleClient : IDisposable
 {
-    private readonly string _bearerToken;
-    private readonly string _baseUrl;
+    readonly private string _bearerToken;
+    readonly private string _baseUrl;
     private bool _disposed;
 
     private ImportClient? _importClient;
