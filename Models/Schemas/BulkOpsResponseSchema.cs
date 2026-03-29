@@ -30,4 +30,18 @@ public class BulkOpsResponseSchema
     /// </summary>
     [JsonPropertyName("createdCount")]
     public int CreatedCount { get; set; }
+
+    public override string ToString()
+    {
+        return $"""
+                ═══════════════════════════════════════
+                📊 Результат массовой операции
+                ═══════════════════════════════════════
+                ✅ Принято:      {AcceptedItemsCount,5}
+                🗑️ Удалено:      {DeletedCount,5}
+                ✏️ Обновлено:    {UpdatedCount,5}
+                ➕ Создано:      {CreatedCount,5}
+                ═══════════════════════════════════════
+                """;
+    }
 }
