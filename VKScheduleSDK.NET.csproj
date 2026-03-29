@@ -10,7 +10,9 @@
     <Authors>Вдовин Даниил</Authors>
     <Description>SDK для работы с API расписания VK Apps</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>VK Schedule SDK .Net</Title>
+    <PackageTags>VK, Schedule, SDK, ApiClent</PackageTags>
   </PropertyGroup>
 
 </Project>
